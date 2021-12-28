@@ -219,7 +219,7 @@ impl TodoList {
     }
 
     fn remove_item(&mut self, index: usize) {
-        if self.list.len() < index {
+        if index < self.list.len() {
             self.list.remove(index);
         }
     }
